@@ -68,41 +68,46 @@ class Ui_MainWindow(object):
         self.gridLayout_13.setObjectName("gridLayout_13")
         self.main_niter_label = QtWidgets.QLabel(self.main_alghoritm_params)
         self.main_niter_label.setObjectName("main_niter_label")
-        self.gridLayout_13.addWidget(self.main_niter_label, 0, 0, 1, 1)
-        self.main_right_break_label = QtWidgets.QLabel(self.main_alghoritm_params)
-        self.main_right_break_label.setObjectName("main_right_break_label")
-        self.gridLayout_13.addWidget(self.main_right_break_label, 1, 0, 1, 1)
-        self.main_epsilon_label = QtWidgets.QLabel(self.main_alghoritm_params)
-        self.main_epsilon_label.setObjectName("main_epsilon_label")
-        self.gridLayout_13.addWidget(self.main_epsilon_label, 3, 0, 1, 1)
-        self.main_h0_label = QtWidgets.QLabel(self.main_alghoritm_params)
-        self.main_h0_label.setObjectName("main_h0_label")
-        self.gridLayout_13.addWidget(self.main_h0_label, 2, 0, 1, 1)
+        self.gridLayout_13.addWidget(self.main_niter_label, 1, 0, 1, 1)
         self.main_niter_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
         self.main_niter_input.setObjectName("main_niter_input")
-        self.gridLayout_13.addWidget(self.main_niter_input, 0, 1, 1, 1)
-        self.main_right_break_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
-        self.main_right_break_input.setObjectName("main_right_break_input")
-        self.gridLayout_13.addWidget(self.main_right_break_input, 1, 1, 1, 1)
-        self.main_h0_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
-        self.main_h0_input.setObjectName("main_h0_input")
-        self.gridLayout_13.addWidget(self.main_h0_input, 2, 1, 1, 1)
+        self.gridLayout_13.addWidget(self.main_niter_input, 1, 1, 1, 1)
+        self.main_epsilon_label = QtWidgets.QLabel(self.main_alghoritm_params)
+        self.main_epsilon_label.setObjectName("main_epsilon_label")
+        self.gridLayout_13.addWidget(self.main_epsilon_label, 2, 0, 1, 1)
         self.main_epsilon_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
         self.main_epsilon_input.setObjectName("main_epsilon_input")
-        self.gridLayout_13.addWidget(self.main_epsilon_input, 3, 1, 1, 1)
-        self.main_g_label = QtWidgets.QLabel(self.main_alghoritm_params)
-        self.main_g_label.setObjectName("main_g_label")
-        self.gridLayout_13.addWidget(self.main_g_label, 4, 0, 1, 1)
-        self.main_g_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
-        self.main_g_input.setObjectName("main_g_input")
-        self.gridLayout_13.addWidget(self.main_g_input, 4, 1, 1, 1)
-        self.main_l_label = QtWidgets.QLabel(self.main_alghoritm_params)
+        self.gridLayout_13.addWidget(self.main_epsilon_input, 2, 1, 1, 1)
+        self.main_h0_label = QtWidgets.QLabel(self.main_alghoritm_params)
+        self.main_h0_label.setObjectName("main_h0_label")
+        self.gridLayout_13.addWidget(self.main_h0_label, 0, 0, 1, 1)
+        self.main_h0_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
+        self.main_h0_input.setObjectName("main_h0_input")
+        self.gridLayout_13.addWidget(self.main_h0_input, 0, 1, 1, 1)
+        self.gridLayout_11.addWidget(self.main_alghoritm_params, 1, 2, 1, 1)
+        self.main_task_params = QtWidgets.QGroupBox(self.main_start_values)
+        self.main_task_params.setObjectName("main_task_params")
+        self.gridparam = QtWidgets.QGridLayout(self.main_task_params)
+        self.gridparam.setObjectName("gridparam")
+        self.main_l_label = QtWidgets.QLabel(self.main_task_params)
         self.main_l_label.setObjectName("main_l_label")
-        self.gridLayout_13.addWidget(self.main_l_label, 5, 0, 1, 1)
-        self.main_l_input = QtWidgets.QLineEdit(self.main_alghoritm_params)
+        self.gridparam.addWidget(self.main_l_label, 2, 0, 1, 1)
+        self.main_l_input = QtWidgets.QLineEdit(self.main_task_params)
         self.main_l_input.setObjectName("main_l_input")
-        self.gridLayout_13.addWidget(self.main_l_input, 5, 1, 1, 1)
-        self.gridLayout_11.addWidget(self.main_alghoritm_params, 1, 1, 1, 1)
+        self.gridparam.addWidget(self.main_l_input, 2, 1, 1, 1)
+        self.main_g_label = QtWidgets.QLabel(self.main_task_params)
+        self.main_g_label.setObjectName("main_g_label")
+        self.gridparam.addWidget(self.main_g_label, 1, 0, 1, 1)
+        self.main_g_input = QtWidgets.QLineEdit(self.main_task_params)
+        self.main_g_input.setObjectName("main_g_input")
+        self.gridparam.addWidget(self.main_g_input, 1, 1, 1, 1)
+        self.main_right_break_label = QtWidgets.QLabel(self.main_task_params)
+        self.main_right_break_label.setObjectName("main_right_break_label")
+        self.gridparam.addWidget(self.main_right_break_label, 0, 0, 1, 1)
+        self.main_right_break_input = QtWidgets.QLineEdit(self.main_task_params)
+        self.main_right_break_input.setObjectName("main_right_break_input")
+        self.gridparam.addWidget(self.main_right_break_input, 0, 1, 1, 1)
+        self.gridLayout_11.addWidget(self.main_task_params, 1, 1, 1, 1)
         self.gridLayout_10.addWidget(self.main_start_values, 2, 0, 1, 1)
         self.main_graphics_box = QtWidgets.QGroupBox(self.main_task_tab)
         self.main_graphics_box.setObjectName("main_graphics_box")
@@ -154,7 +159,12 @@ p, li { white-space: pre-wrap; }
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">d</span><span style=" font-size:14pt; font-weight:600; vertical-align:super;">2</span><span style=" font-size:14pt; font-weight:600;">u/dx</span><span style=" font-size:14pt; font-weight:600; vertical-align:super;">2</span><span style=" font-size:14pt; font-weight:600;"> + g / l * sin(u) = 0</span></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">u(0) = u</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span></p>
-<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">u'(0) = u'</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span></p></body></html>"""))
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">u'(0) = u'</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:18pt; font-weight:600;">Пояснения по работе программы</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Для того чтобы включить оценку локальной погрешности, задайте параметр <<Контроль локальной погрешности>> больше нуля</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Счет будет остановлен по достижении конца отрезка интегрирования или по достижении заданного количества итераций</span></p></body></html>"""))
         self.main_koshi_task.setTitle(_translate("MainWindow", "Задача Коши"))
         self.main_x0_label.setText(_translate("MainWindow", "<html><head/><body><p>x<span style=\" vertical-align:sub;\">0</span></p></body></html>"))
         self.main_x0_input.setText(_translate("MainWindow", "0"))
@@ -163,56 +173,53 @@ p, li { white-space: pre-wrap; }
         self.main_u20_label.setText(_translate("MainWindow", "<html><head/><body><p>u'<span style=\" vertical-align:sub;\">0</span></p></body></html>"))
         self.main_u20_input.setText(_translate("MainWindow", "0"))
         self.main_start.setText(_translate("MainWindow", "Численно вычислить"))
+        self.main_task_params.setTitle(_translate("MainWindow", "Параметры задачи"))
         self.main_alghoritm_params.setTitle(_translate("MainWindow", "Параметры алгоритма"))
         self.main_niter_label.setText(_translate("MainWindow", "Количество итераций"))
-        self.main_right_break_label.setText(_translate("MainWindow", "Правая граница"))
+        self.main_right_break_label.setText(_translate("MainWindow", "Отрезок интегрирования (м)"))
         self.main_epsilon_label.setText(_translate("MainWindow", "Контроль локальной погрешности"))
-        self.main_h0_label.setText(_translate("MainWindow", "Шаг интегрирования"))
+        self.main_h0_label.setText(_translate("MainWindow", "Начальный шаг интегрирования"))
         self.main_niter_input.setText(_translate("MainWindow", "1000"))
         self.main_right_break_input.setText(_translate("MainWindow", "100"))
         self.main_h0_input.setText(_translate("MainWindow", "0.001"))
         self.main_epsilon_input.setText(_translate("MainWindow", "0"))
-        self.main_g_label.setText(_translate("MainWindow", "Ускорение свободного падения"))
+        self.main_g_label.setText(_translate("MainWindow", "<html><head/><body><p>Ускорение свободного падения (м/с<span style=\" vertical-align:super;\">2</span>)</p></body></html>"))
         self.main_g_input.setText(_translate("MainWindow", "9.8"))
-        self.main_l_label.setText(_translate("MainWindow", "Длина кругового маятника"))
+        self.main_l_label.setText(_translate("MainWindow", "Длина кругового маятника (м)"))
         self.main_l_input.setText(_translate("MainWindow", "10"))
         self.main_graphics_box.setTitle(_translate("MainWindow", "График"))
         self.main_task.setTabText(self.main_task.indexOf(self.main_task_tab), _translate("MainWindow", "Задача"))
         self.main_task.setTabText(self.main_task.indexOf(self.main_table_tab), _translate("MainWindow", "Таблица"))
         self.task_swith.setTabText(self.task_swith.indexOf(self.main_tab), _translate("MainWindow", "Основная задача"))
         self.task_swith.setTabText(self.task_swith.indexOf(self.info_tab), _translate("MainWindow", "Справка"))
-        self.info.setHtml("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
-<html><head><meta name="qrichtext" content="1" /><style type="text/css">
-p, li { white-space: pre-wrap; }
-</style></head><body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;">
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальная оценка локальной погрешности: </span><span style=" font-size:14pt; font-weight:600;">0</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальный шаг: </span><span style=" font-size:14pt; font-weight:600;">0</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Минимальный шаг: </span><span style=" font-size:14pt; font-weight:600;">0</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Количество раз, когда шаг увеличивался: </span><span style=" font-size:14pt; font-weight:600;">0</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Количество раз, когда шаг уменьшался: </span><span style=" font-size:14pt; font-weight:600;">0</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Количество итераций: </span><span style=" font-size:14pt; font-weight:600;">0</span></p></body></html>""")
 
-    def get_stats(self, s_list : list, h_list : list, c1_list : list, c2_list : list):
+    def get_stats(self, x_list : list, s_list : list, h_list : list, c1_list : list, c2_list : list):
         number_iter = len(s_list)
+        max_x = 0
         max_s = s_list[0]
         max_h = h_list[0]
         min_h = h_list[0]
         c1_count = 0
         c2_count = 0
         for i in range(number_iter):
-            max_s = max(max_s, s_list[i])
+            if (max_s < s_list[i]):
+                max_x = x_list[i]
+                max_s = s_list[i]
             max_h = max(max_h, h_list[i])
             min_h = min(min_h, h_list[i])
             c1_count += c1_list[i]
             c2_count += c2_list[i]
-        return max_s, max_h, min_h, c1_count, c2_count, number_iter
+        return max_s, max_x, max_h, min_h, c1_count, c2_count, number_iter
 
-    def update_info(self, max_s : float, max_h : float, min_h : float, c1 : int, c2 : int, iter_count : int):
+    def update_info(self, x_last, v1_last, v2_last, max_s : float, max_x : float, max_h : float, min_h : float, c1 : int, c2 : int, iter_count : int):
         self.info.setHtml("""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 <html><head><meta name="qrichtext" content="1" /><style type="text/css">
 p, li { white-space: pre-wrap; }
 </style></head><body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;">
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальная оценка локальной погрешности: </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_s) +"""</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Полученное время (с): </span><span style=" font-size:14pt; font-weight:600;">""" + str(x_last) + """</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Полученное положение (м): </span><span style=" font-size:14pt; font-weight:600;">""" + str(v2_last) + """</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Полученное ускорение (м/с^2): </span><span style=" font-size:14pt; font-weight:600;">""" + str(v1_last) + """</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальная норма оценки локальной погрешности </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_s) +"""</span><span style=" font-size:14pt;"> достигнута в точке X равной </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_x) +"""</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальный шаг: </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_h) + """</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Минимальный шаг: </span><span style=" font-size:14pt; font-weight:600;">""" + str(min_h) + """</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Количество раз, когда шаг увеличивался: </span><span style=" font-size:14pt; font-weight:600;">""" + str(c2) + """</span></p>
@@ -221,19 +228,19 @@ p, li { white-space: pre-wrap; }
 
     def plot(self, x_list : list, v1_list : list, v2_list : list):
         self.main_figure.clear()
-        v1_v2 = self.main_figure.add_subplot(211)
-        v1_v2.set_xlabel("V1")
-        v1_v2.set_ylabel("V2")
+        v1_v2 = self.main_figure.add_subplot(311)
+        v1_v2.set_xlabel("Положение (м)")
+        v1_v2.set_ylabel("Ускорение (м/с^2)")
         v1_v2.grid(True)
-        v1_v2.plot(v1_list, v2_list)
+        v1_v2.plot(v2_list, v1_list)
         x_v1 = self.main_figure.add_subplot(223)
-        x_v1.set_xlabel("X")
-        x_v1.set_ylabel("V1")
+        x_v1.set_xlabel("Время (с)")
+        x_v1.set_ylabel("Ускорение (м/с^2)")
         x_v1.grid(True)
         x_v1.plot(x_list, v1_list)
         x_v2 = self.main_figure.add_subplot(224)
-        x_v2.set_xlabel("X")
-        x_v2.set_ylabel("V2")
+        x_v2.set_xlabel("Время (с)")
+        x_v2.set_ylabel("Положение (м)")
         x_v2.grid(True)
         x_v2.plot(x_list, v2_list)
         self.main_graphic.draw()
@@ -250,61 +257,23 @@ p, li { white-space: pre-wrap; }
         l = float(self.main_l_input.text())
         return x0, u10, u20, niter, right_break, h0, epsilon, g, l
 
-    def f1_main(self, x, u1, u2, g, l):
+    def f1_main(self, x : float, u1 : float, u2 : float, g : float, l : float):
         return u2
 
-    def f2_main(self, x, u1, u2, g, l):
-        return ((g / l) * sin(u1)) * (-1)
-
-    # def k1(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, f):
-    #     return 0.5 * h * f(x, u1, u2, g, l)
-
-    # def k2(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k11, k12, f):
-    #     return 0.5 * h * f(x + (0.5 * h), u1 + k11, u2 + k12, g, l)
-
-    # def k3(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k21, k22, f):
-    #     return h * f(x + (0.5 * h), u1 + k21, u2 + k22, g, l)
-
-    # def k4(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k31, k32, f):
-    #     return 0.5 * h * f(x + h, u1 + k31, u2 + k32, g, l)
-
-    # def calculate_iter_rk4(self, x_curr : float, v1_curr : float, v2_curr : float, h_curr : float, g : float, l : float, f1, f2):
-    #     k11 = self.k1(x_curr, v1_curr, v2_curr, h_curr, g, l, f1)
-    #     k12 = self.k1(x_curr, v1_curr, v2_curr, h_curr, g, l, f2)
-    #     k21 = self.k2(x_curr, v1_curr, v2_curr, h_curr, g, l, k11, k12, f1)
-    #     k22 = self.k2(x_curr, v1_curr, v2_curr, h_curr, g, l, k11, k12, f2)
-    #     k31 = self.k3(x_curr, v1_curr, v2_curr, h_curr, g, l, k21, k22, f1)
-    #     k32 = self.k3(x_curr, v1_curr, v2_curr, h_curr, g, l, k21, k22, f2)
-    #     k41 = self.k4(x_curr, v1_curr, v2_curr, h_curr, g, l, k31, k32, f1)
-    #     k42 = self.k4(x_curr, v1_curr, v2_curr, h_curr, g, l, k31, k32, f2)
-
-    #     x_next = x_curr + h_curr
-    #     v1_next = v1_curr + ((k11 + (2 * k12) + (2 * k31) + k41) / 6)
-    #     v2_next = v2_curr + ((k12 + (2 * k22) + (2 * k32) + k42) / 6)
-    #     return x_next, v1_next, v2_next
+    def f2_main(self, x : float, u1 : float, u2 : float, g : float, l : float):
+        return -g / l * sin(u1)
 
     def k1(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, f):
         return f(x, u1, u2, g, l)
 
-    def k2(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k11, k12, f):
-        h2 = h / 2
-        x_next = x + h2
-        u1_next = u1 + h2 * k11
-        u2_next = u2 + h2 * k12
-        return f(x_next, u1_next, u2_next, g, l)
+    def k2(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k11 : float, k12 : float, f):
+        return f(x + h / 2, u1 + h / 2 * k11, u2 + h / 2 * k12, g, l)
 
-    def k3(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k21, k22, f):
-        h2 = h / 2
-        x_next = x + h2
-        u1_next = u1 + h2 * k21
-        u2_next = u2 + h2 * k22
-        return f(x_next, u1_next, u2_next, g, l)
+    def k3(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k21 : float, k22 : float, f):
+        return f(x + h / 2, u1 + h / 2 * k21, u2 + h / 2 * k22, g, l)
 
-    def k4(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k31, k32, f):
-        x_next = x + h
-        u1_next = u1 + h * k31
-        u2_next = u2 + h * k32
-        return f(x_next, u1_next, u2_next, g, l)
+    def k4(self, x : float, u1 : float, u2 : float, h : float, g : float, l : float, k31 : float, k32 : float, f):
+        return f(x + h, u1 + h * k31, u2 + h * k32, g, l)
 
     def calculate_iter_rk4(self, x_curr : float, v1_curr : float, v2_curr : float, h_curr : float, g : float, l : float, f1, f2):
         k11 = self.k1(x_curr, v1_curr, v2_curr, h_curr, g, l, f1)
@@ -441,5 +410,5 @@ p, li { white-space: pre-wrap; }
         else:
             x_list, v1_list, v2_list, v12_list, v22_list, dv1_list, dv2_list, s_list, h_list, c1_list, c2_list = self.calculate_rk4(x0, u20, -1 * g / l * sin(u10), h0, epsilon, niter, right_break, g, l, self.f1_main, self.f2_main)
             self.main_table.print_table(x_list, v1_list, v2_list, v12_list, v22_list, dv1_list, dv2_list, s_list, h_list, c1_list, c2_list)
-        self.update_info(*self.get_stats(s_list, h_list, c1_list, c2_list))
+        self.update_info(x_list[-1], v1_list[-1], v2_list[-1], *self.get_stats(x_list, s_list, h_list, c1_list, c2_list))
         self.plot(x_list, v1_list, v2_list)

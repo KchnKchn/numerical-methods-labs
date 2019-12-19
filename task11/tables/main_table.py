@@ -7,7 +7,8 @@ class main_table(QtWidgets.QTableWidget):
         self.col_count = 11
         self.setRowCount(self.row_count)
         self.setColumnCount(self.col_count)
-        self.setHorizontalHeaderLabels(("Xi", "V1i", "V2i", "V1_2i", "V2_2i", "V1i - V1_2i", "V2i - V2_2i", "ОЛП", "Hi", "C1", "C2"))
+        self.setHorizontalHeaderLabels(("Точка Х", "Ускорение", "Положение", "Уточненное ускорение", "Уточненное положение", "Разница ускорений", "Разница положений", "Норма ОЛП", "Шаг интегрирования", "Количество уменьшений шага", "Количество увеличений шага"))
+        self.resizeColumnsToContents()
 
     def _create_cell(self, text):
         cell = QtWidgets.QTableWidgetItem(text)
@@ -37,3 +38,4 @@ class main_table(QtWidgets.QTableWidget):
             self.setItem(i, 8, self._create_cell(str(h_list[i])))
             self.setItem(i, 9, self._create_cell(str(c1_list[i])))
             self.setItem(i, 10, self._create_cell(str(c2_list[i])))
+        self.resizeColumnsToContents()
