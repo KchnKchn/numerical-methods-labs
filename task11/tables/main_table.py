@@ -7,7 +7,7 @@ class main_table(QtWidgets.QTableWidget):
         self.col_count = 11
         self.setRowCount(self.row_count)
         self.setColumnCount(self.col_count)
-        self.setHorizontalHeaderLabels(("Точка Х", "Ускорение", "Положение", "Уточненное ускорение", "Уточненное положение", "Разница ускорений", "Разница положений", "Норма ОЛП", "Шаг интегрирования", "Количество уменьшений шага", "Количество увеличений шага"))
+        self.setHorizontalHeaderLabels(("Время", "Ускорение", "Положение", "Уточненное ускорение", "Уточненное положение", "Разница ускорений", "Разница положений", "Норма ОЛП", "Шаг интегрирования", "Количество уменьшений шага", "Количество увеличений шага"))
         self.resizeColumnsToContents()
 
     def _create_cell(self, text):

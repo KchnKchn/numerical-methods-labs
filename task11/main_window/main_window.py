@@ -163,8 +163,8 @@ p, li { white-space: pre-wrap; }
 <p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:18pt; font-weight:600;">Пояснения по работе программы</span></p>
 <p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Для того чтобы включить оценку локальной погрешности, задайте параметр <<Контроль локальной погрешности>> больше нуля</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Счет будет остановлен по достижении конца отрезка интегрирования или по достижении заданного количества итераций</span></p></body></html>"""))
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Для того чтобы включить контролирование локальной погрешности, задайте значение параметра "Контроль локальной погрешности" больше нуля. Для отключения контроля задайте значение параметра 0.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Счет будет остановлен по достижении конца отрезка интегрирования или по достижении заданного количества итераций.</span></p></body></html>"""))
         self.main_koshi_task.setTitle(_translate("MainWindow", "Задача Коши"))
         self.main_x0_label.setText(_translate("MainWindow", "<html><head/><body><p>x<span style=\" vertical-align:sub;\">0</span></p></body></html>"))
         self.main_x0_input.setText(_translate("MainWindow", "0"))
@@ -176,7 +176,7 @@ p, li { white-space: pre-wrap; }
         self.main_task_params.setTitle(_translate("MainWindow", "Параметры задачи"))
         self.main_alghoritm_params.setTitle(_translate("MainWindow", "Параметры алгоритма"))
         self.main_niter_label.setText(_translate("MainWindow", "Количество итераций"))
-        self.main_right_break_label.setText(_translate("MainWindow", "Отрезок интегрирования (м)"))
+        self.main_right_break_label.setText(_translate("MainWindow", "Отрезок интегрирования (с)"))
         self.main_epsilon_label.setText(_translate("MainWindow", "Контроль локальной погрешности"))
         self.main_h0_label.setText(_translate("MainWindow", "Начальный шаг интегрирования"))
         self.main_niter_input.setText(_translate("MainWindow", "1000"))
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Полученное время (с): </span><span style=" font-size:14pt; font-weight:600;">""" + str(x_last) + """</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Полученное положение (м): </span><span style=" font-size:14pt; font-weight:600;">""" + str(v2_last) + """</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Полученное ускорение (м/с^2): </span><span style=" font-size:14pt; font-weight:600;">""" + str(v1_last) + """</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальная норма оценки локальной погрешности </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_s) +"""</span><span style=" font-size:14pt;"> достигнута в точке X равной </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_x) +"""</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальная норма оценки локальной погрешности </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_s) +"""</span><span style=" font-size:14pt;"> достигнута при времени </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_x) +"""</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Максимальный шаг: </span><span style=" font-size:14pt; font-weight:600;">""" + str(max_h) + """</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Минимальный шаг: </span><span style=" font-size:14pt; font-weight:600;">""" + str(min_h) + """</span></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt;">Количество раз, когда шаг увеличивался: </span><span style=" font-size:14pt; font-weight:600;">""" + str(c2) + """</span></p>
