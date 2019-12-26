@@ -149,22 +149,43 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Численные методы. Задача 11. Решение системы ДУ методом РК 4 порядка"))
-        self.main_description.setHtml(_translate("MainWindow",""" <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+        self.main_description.setHtml(_translate("MainWindow","""<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 <html><head><meta name="qrichtext" content="1" /><style type="text/css">
 p, li { white-space: pre-wrap; }
 </style></head><body style=" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;">
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:18pt; font-weight:600;">Описание основной задачи</span></p>
 <p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Рассматривается дифференциальное уравнение:</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Рассматривается дифференциальное уравнение, которое представляет собой закон движения маятника без потерь энергии.</span></p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">d</span><span style=" font-size:14pt; font-weight:600; vertical-align:super;">2</span><span style=" font-size:14pt; font-weight:600;">u/dx</span><span style=" font-size:14pt; font-weight:600; vertical-align:super;">2</span><span style=" font-size:14pt; font-weight:600;"> + g / l * sin(u) = 0</span></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">u(0) = u</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">u'(0) = u'</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span></p>
-<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">где u</span><span style=" font-size:12pt; vertical-align:sub;">0</span><span style=" font-size:12pt;"> - начальное положение маятника, u'</span><span style=" font-size:12pt; vertical-align:sub;">0</span><span style=" font-size:12pt;"> - начальная скорость маятника.</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
 <p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:18pt; font-weight:600;">Пояснения по работе программы</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:18pt; font-weight:600;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">Решение поставленной задачи</span></p>
 <p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Для того чтобы включить контролирование локальной погрешности, задайте значение параметра "Контроль локальной погрешности" больше нуля. Для отключения контроля задайте значение параметра 0.</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Счет будет остановлен по достижении конца отрезка интегрирования или по достижении заданного количества итераций.</span></p></body></html>"""))
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Исходное ДУ сводится к системе:</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">dv</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">1</span><span style=" font-size:14pt; font-weight:600;">/dt = v</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">2</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">dv</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">2</span><span style=" font-size:14pt; font-weight:600;">/dt = - g / l * sin(v</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">1</span><span style=" font-size:14pt; font-weight:600;">)</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">v</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">1</span><span style=" font-size:14pt; font-weight:600;">(0) = u'</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">v</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">2</span><span style=" font-size:14pt; font-weight:600;">(0) = - g / l * sin(u</span><span style=" font-size:14pt; font-weight:600; vertical-align:sub;">0</span><span style=" font-size:14pt; font-weight:600;">)</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Эта система ОДУ решается методом РК 4 порядка</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">Шаг интегрирования</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">В программе реализованы счет с постоянным шагом и счет с изменением шага интергрирования.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Для того, чтобы включить счет с изменением шага интегрирования, задайте значение параметра &quot;Контроль локальной погрешности&quot; больше нуля.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">В этом случае шаг будет увеличиватся или уменьшатся таким образом, чтобы в каждой точки численной траектории оценка нормы локальной погрешности была не ниже значения параметра.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Для того, чтобы включить счет с постоянным шагом, задайте значение параметра &quot;Контроль локальной погрешности&quot; равным нулю.</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">В этом случае шаг будет постоянным.</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
+<p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:14pt; font-weight:600;">Остановка счета</span></p>
+<p align="center" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">В программе реализовано два случая остановки счета: численная траектория достигла правой границы, алгоритм достиг определенной итерации.</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Остановка счета производится, если выполнено хотя бы одно условие. (Счет может остановится не достигнув правой границы)</span></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:12pt;">Если численная траектория не достигла правой границы, увеличивайте количество итераций алгоритма.</span></p></body></html>"""))
         self.main_koshi_task.setTitle(_translate("MainWindow", "Задача Коши"))
         self.main_x0_label.setText(_translate("MainWindow", "<html><head/><body><p>x<span style=\" vertical-align:sub;\">0</span></p></body></html>"))
         self.main_x0_input.setText(_translate("MainWindow", "0"))
@@ -175,8 +196,8 @@ p, li { white-space: pre-wrap; }
         self.main_start.setText(_translate("MainWindow", "Численно вычислить"))
         self.main_task_params.setTitle(_translate("MainWindow", "Параметры задачи"))
         self.main_alghoritm_params.setTitle(_translate("MainWindow", "Параметры алгоритма"))
-        self.main_niter_label.setText(_translate("MainWindow", "Количество итераций"))
-        self.main_right_break_label.setText(_translate("MainWindow", "Отрезок интегрирования (с)"))
+        self.main_niter_label.setText(_translate("MainWindow", "Максимальное количество итераций"))
+        self.main_right_break_label.setText(_translate("MainWindow", "Правая граница"))
         self.main_epsilon_label.setText(_translate("MainWindow", "Контроль локальной погрешности"))
         self.main_h0_label.setText(_translate("MainWindow", "Начальный шаг интегрирования"))
         self.main_niter_input.setText(_translate("MainWindow", "1000"))
